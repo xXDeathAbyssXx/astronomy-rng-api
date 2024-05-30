@@ -21,7 +21,7 @@ os.makedirs(output_dir, exist_ok=True)
 # Descargar y guardar los datos de cada catálogo
 for key, name in catalogues.items():
     print(f"Downloading data from {name} ({key})...")
-    cat = Catalogue(key, n_max=1000000) #1M = 100mb
+    cat = Catalogue(key, n_max=1000000)  # 1M = 100mb
     data, meta = cat.download()
 
     # Guardar los datos en un archivo de texto
