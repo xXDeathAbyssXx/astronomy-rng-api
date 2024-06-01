@@ -15,7 +15,7 @@ catalogues = {
 }
 
 # Crear el directorio para guardar los archivos
-output_dir = "catalogue_data"
+output_dir = "catalogue_data2"
 os.makedirs(output_dir, exist_ok=True)
 
 # Descargar y guardar los datos de cada catálogo
