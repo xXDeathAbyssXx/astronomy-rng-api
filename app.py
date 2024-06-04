@@ -8,12 +8,12 @@ app = Flask(__name__)
 probabilities = {
     "Common": 0.70,
     "Uncommon": 0.10,  
-    "Rare": 0.05,       
+    "Rare": 0.03,       
     "Very Rare": 0.02,  
-    "Epic": 0.001,
-    "Legendary": 0.005,
-    "Mythical": 0.001,
-    "Cosmic": 0.0001
+    "Epic": 0.0001,
+    "Legendary": 0.0005,
+    "Mythical": 0.0001,
+    "Cosmic": 0.00001
 }
 
 # Object types classification
@@ -247,4 +247,4 @@ def rng():
 
 if __name__ == '__main__':
     load_data()
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
